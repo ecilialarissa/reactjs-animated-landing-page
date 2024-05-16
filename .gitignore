@@ -1,23 +1,50 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Diretórios de dependências
+node_modules/
+jspm_packages/
 
-# testing
-/coverage
+# Diretórios de build
+dist/
+build/
 
-# production
-/build
+# Configurações de IDEs e editores
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# misc
+# Sistema operacional
 .DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Configuração de ambiente
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Diretórios de cache
+.cache/
+.parcel-cache/
+.next/
+out/
+.sass-cache/
+.venv/
+tmp/
+
+# Outros arquivos e diretórios que não devem ser versionados
+*.lock
+*.log
+*.gz
